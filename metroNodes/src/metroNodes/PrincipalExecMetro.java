@@ -9,8 +9,8 @@ public class PrincipalExecMetro {
 		String stationtarget;
 		int sumst= 0;
 		
-		stationtarget = "i";
-		stationfirst = "a";
+		stationtarget = "a";
+		stationfirst = "i";
 //		
 //		String arr1[][]= {{"a","1", null}, {"b", "1", null}, {"e", "1", "2" }, {"f", "1", null}, {"i", "1", null} };
 //		String arr2[][]= {{"c","2", null}, {"d", "2", null}, {"e", "2", "1"}, {"g", "2",null }, {"h", "2", null}};

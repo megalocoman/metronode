@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="car/src"/>
+	<classpathentry kind="src" path="Lunes3-2-20/src"/>
+	<classpathentry kind="src" path="metroNodes/src"/>
+	<classpathentry kind="src" path="proyecto/src"/>
+	<classpathentry kind="src" path="trabajoRut/src"/>
+	<classpathentry kind="output" path="Lunes3-2-20/bin"/>
+</classpath>

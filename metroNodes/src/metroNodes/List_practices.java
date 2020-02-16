@@ -70,6 +70,7 @@ public class List_practices {
 		System.out.println("Find the index of the first occurrence of an element in an ArrayList");
 		System.out.println("indexOf \"e\" : "+letterlist.indexOf("e")); 
 		
+		
 	}
 
 }

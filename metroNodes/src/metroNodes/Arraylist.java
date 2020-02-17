@@ -9,6 +9,7 @@ public class Arraylist {
 		ArrayList<Integer> coordfin; // coordeniate of station final
 		ArrayList<ArrayList<String>> network =
 				new ArrayList<ArrayList<String>>();
+		ArrayList<String> stationtravelled = null;
 		
 		ArrayList<String> linea = new ArrayList<String>();
 		linea.add("1");
@@ -35,7 +36,7 @@ public class Arraylist {
 		System.out.println(network);
 		
 		String ast= "c";
-		String tst= "i";
+		String tst= "a";
 //		
 		Station obj1 = new Station();
 		Station obj2 = new Station();
@@ -44,12 +45,19 @@ public class Arraylist {
 		
 		System.out.println(coordini);
 		System.out.println(coordfin);
+		
+		if (coordini.get(0)==coordfin.get(0)) {
+			Insideline obj3 = new Insideline();
+			
+//			stationtravelled = obj3.FindStastion(0, 1, 5, network );
+//			System.out.println(obj3.FindStastion(0, 1, 5, network ));
+			stationtravelled = obj3.FindStastion(coordini.get(0), coordini.get(1), coordfin.get(1), network );
+		}
 
-		
-		
-		
-		
-		
+//		for(String s :stationtravelled) {
+//		System.out.println(s);		
+//		}
+		System.out.println(stationtravelled);
+	
 	}
-
 }

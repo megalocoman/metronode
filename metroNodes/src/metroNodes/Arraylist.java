@@ -29,7 +29,16 @@ public class Arraylist {
 		lineb.add("i");
 //		System.out.println(lineb);
 		
+		ArrayList<ArrayList<String>> combinationlist = new ArrayList<ArrayList<String>>();
+		ArrayList<String> comb1 = new ArrayList<String>();
+		comb1.add("c");
+		comb1.add("1");
+		comb1.add("2");
 		
+		ArrayList<String> comb2 = new ArrayList<String>();
+		comb2.add("c");
+		comb2.add("2");
+		comb2.add("1");
 		
 		network.add(linea);
 		network.add(lineb);
@@ -48,15 +57,11 @@ public class Arraylist {
 		
 		if (coordini.get(0)==coordfin.get(0)) {
 			Insideline obj3 = new Insideline();
-			
-//			stationtravelled = obj3.FindStastion(0, 1, 5, network );
-//			System.out.println(obj3.FindStastion(0, 1, 5, network ));
+
 			stationtravelled = obj3.FindStastion(coordini.get(0), coordini.get(1), coordfin.get(1), network );
 		}
 
-//		for(String s :stationtravelled) {
-//		System.out.println(s);		
-//		}
+
 		System.out.println(stationtravelled);
 	
 	}

@@ -57,10 +57,8 @@ public class Arraylist {
 		
 		if (coordini.get(0)==coordfin.get(0)) {
 			Insideline obj3 = new Insideline();
-
 			stationtravelled = obj3.FindStastion(coordini.get(0), coordini.get(1), coordfin.get(1), network );
 		}
-
 
 		System.out.println(stationtravelled);
 	

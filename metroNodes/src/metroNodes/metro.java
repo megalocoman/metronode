@@ -76,7 +76,7 @@ public class metro {
 		estaciones[2][0] = "los libertadores";
 		estaciones[2][1] = "cardenal caro";
 		estaciones[2][2] = "vivaceta";
-		estaciones[2][3] = "conchali";
+		estaciones[2][3] = "vivaceta";
 		estaciones[2][4] = "plaza chacabuco";
 		estaciones[2][5] = "hospitales";
 		estaciones[2][6] = "puente cal y canto";
@@ -118,7 +118,7 @@ public class metro {
 		estaciones[3][10] = "las torres";
 		estaciones[3][11] = "macul";
 		estaciones[3][12] = "vicuña mackenna";
-		estaciones[3][13] = "vicente valdes";
+		estaciones[3][13] = "vicuña mackenna";
 		estaciones[3][14] = "rojas magallanes";
 		estaciones[3][15] = "trinidad";
 		estaciones[3][16] = "san jose de la estrella";

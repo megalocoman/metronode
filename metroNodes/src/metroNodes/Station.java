@@ -7,6 +7,8 @@ public class Station {
 	int index_fst; // index of initial station in the line
 	int index_fline; // index of line
 	ArrayList<Integer> station = new ArrayList<Integer>();	
+	
+	
 	public  ArrayList<Integer> findCoord( ArrayList<ArrayList<String>> network, String st 	) {
 		
 		for (Integer i= 0; i< network.size(); ++i ) {

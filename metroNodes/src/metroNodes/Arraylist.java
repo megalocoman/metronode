@@ -9,58 +9,41 @@ public class Arraylist {
 		ArrayList<Integer> coordfin; // coordeniate of station final
 		ArrayList<ArrayList<String>> network =
 				new ArrayList<ArrayList<String>>();
+		
 		ArrayList<String> stationtravelled = null;
 		
-		ArrayList<String> linea = new ArrayList<String>();
-		linea.add("1");
-		linea.add("a");
-		linea.add("b");
-		linea.add("c");
-		linea.add("d");
-		linea.add("e");
-//		System.out.println(linea);
+		ArrayList<ArrayList<String>> combnekwork =
+				new ArrayList<ArrayList<String>>();
 		
-		ArrayList<String> lineb = new ArrayList<String>();
-		lineb.add("2");
-		lineb.add("f");
-		lineb.add("g");
-		lineb.add("c");
-		lineb.add("h");
-		lineb.add("i");
-//		System.out.println(lineb);
+// call whole metro network	
+		Combination obj1 = new Combination();
+		network = obj1.network();
+//		network.forEach(a ->{
+//			System.out.println(a);
+//		});
+		combnekwork = obj1.CombNetwork();
+		combnekwork.forEach(a ->{
+			System.out.println(a);
+		});
 		
-		ArrayList<ArrayList<String>> combinationlist = new ArrayList<ArrayList<String>>();
-		ArrayList<String> comb1 = new ArrayList<String>();
-		comb1.add("c");
-		comb1.add("1");
-		comb1.add("2");
 		
-		ArrayList<String> comb2 = new ArrayList<String>();
-		comb2.add("c");
-		comb2.add("2");
-		comb2.add("1");
-		
-		network.add(linea);
-		network.add(lineb);
-		System.out.println(network);
-		
-		String ast= "c";
-		String tst= "a";
+//		String ast= "zapadores";
+//		String tst= "lo ovalle";
 //		
-		Station obj1 = new Station();
-		Station obj2 = new Station();
-		coordini = obj1.findCoord(network, ast);
-		coordfin = obj2.findCoord(network, tst);
-		
-		System.out.println(coordini);
-		System.out.println(coordfin);
-		
-		if (coordini.get(0)==coordfin.get(0)) {
-			Insideline obj3 = new Insideline();
-			stationtravelled = obj3.FindStastion(coordini.get(0), coordini.get(1), coordfin.get(1), network );
-		}
-
-		System.out.println(stationtravelled);
+//		Station obj2 = new Station();
+//		Station obj3 = new Station();
+//		coordini = obj2.findCoord(network, ast);
+//		coordfin = obj3.findCoord(network, tst);
+//		
+//		System.out.println(coordini);
+//		System.out.println(coordfin);
+//		
+//		if (coordini.get(0)==coordfin.get(0)) {
+//			Insideline obj4 = new Insideline();
+//			stationtravelled = obj4.FindStastion(coordini.get(0), coordini.get(1), coordfin.get(1), network );
+//		}
+//
+//		System.out.println(stationtravelled);
 	
 	}
 }

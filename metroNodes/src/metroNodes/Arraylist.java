@@ -27,23 +27,24 @@ public class Arraylist {
 		});
 		
 		
-//		String ast= "zapadores";
-//		String tst= "lo ovalle";
-//		
-//		Station obj2 = new Station();
-//		Station obj3 = new Station();
-//		coordini = obj2.findCoord(network, ast);
-//		coordfin = obj3.findCoord(network, tst);
-//		
-//		System.out.println(coordini);
-//		System.out.println(coordfin);
-//		
-//		if (coordini.get(0)==coordfin.get(0)) {
-//			Insideline obj4 = new Insideline();
-//			stationtravelled = obj4.FindStastion(coordini.get(0), coordini.get(1), coordfin.get(1), network );
-//		}
-//
-//		System.out.println(stationtravelled);
+		String ast= "zapadores";
+		String tst= "lo ovalle";
+		
+		Station obj2 = new Station();
+		Station obj3 = new Station();
+		coordini = obj2.findCoord(network, ast);
+		coordfin = obj3.findCoord(network, tst);
+		
+		System.out.println(coordini);
+		System.out.println(coordfin);
+		
+		if (coordini.get(0)==coordfin.get(0)) {
+			Insideline obj4 = new Insideline();
+			stationtravelled = obj4.FindStastion(coordini.get(0), coordini.get(1), coordfin.get(1), network );
+		}
+		
+
+		System.out.println(stationtravelled);
 	
 	}
 }

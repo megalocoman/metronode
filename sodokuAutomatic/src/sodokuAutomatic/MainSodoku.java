@@ -47,17 +47,15 @@ public class MainSodoku {
 			hori= 6;
 		}
 		for(int i = hori; i<=(hori+3); i++) {
-			for(j =)
+			for(int j =vert; j<=(vert+3); j++ ) {
+				if(numero==array[i][j]) {
+					existe = false;
+					break;
+				}
+			}
 		}
-		
-		
 		return existe;
-		
-		
 	}
-	
-	
-	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

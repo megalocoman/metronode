@@ -102,7 +102,7 @@ public class MainSodoku {
 		sodokuarray[8][8]= 9;
 		
 		
-		
+		//hvjhvjh
 		
 		for(int k =0;k<9; k++) {
 			for( int l=0; l<9; l++) {

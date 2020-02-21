@@ -70,44 +70,13 @@ public class MainSodoku {
 		boolean horizontal;
 		boolean cuadrado;
 		
-		sodokuarray[0][0]= 5;
-		sodokuarray[0][1]= 3;
-		sodokuarray[0][5]= 7;
-		sodokuarray[1][0]= 6;
-		sodokuarray[1][3]= 1;
-		sodokuarray[1][4]= 9;
-		sodokuarray[1][5]= 5;
-		sodokuarray[2][1]= 9;
-		sodokuarray[2][2]= 8;
-		sodokuarray[2][7]= 6;
-		sodokuarray[3][0]= 8;
-		sodokuarray[3][4]= 6;
-		sodokuarray[3][8]= 3;
-		sodokuarray[4][0]= 4;
-		sodokuarray[4][3]= 8;
-		sodokuarray[4][5]= 3;
-		sodokuarray[4][8]= 6;
-		sodokuarray[5][0]= 7;
-		sodokuarray[5][4]= 2;
-		sodokuarray[5][8]= 6;
-		sodokuarray[6][1]= 6;
-		sodokuarray[6][6]= 2;
-		sodokuarray[6][7]= 8;
-		sodokuarray[7][3]= 4;
-		sodokuarray[7][4]= 1;
-		sodokuarray[7][5]= 9;
-		sodokuarray[7][8]= 5;
-		sodokuarray[8][4]= 8;
-		sodokuarray[8][7]= 7;
-		sodokuarray[8][8]= 9;
-		
+	
 		
 		//hvjhvjh
 		
 		for(int k =0;k<9; k++) {
 			for( int l=0; l<9; l++) {
-				if (!(sodokuarray[k][l]<1
-						)&&!(sodokuarray[k][l]>9) ) {
+				if (sodokuarray[k][l]!=0) {
 					break;
 				}else {
 					
@@ -115,31 +84,30 @@ public class MainSodoku {
 						System.out.println("coordenadas numero vertical"+(k+1)+" horizontal  "+(l+1) );
 						System.out.println("ingrese un numero entre el uno y nueve: ");
 						numerosodoku = keyboard.nextInt();
-						
-					
 							
 						while(!(numerosodoku> 0 && numerosodoku<=9)) {
 							System.out.println("ingrese un numero en el rango indicado.");
 							numerosodoku = keyboard.nextInt();						
 						}
 						
-						
 						MainSodoku obj1 = new MainSodoku();
 						horizontal = obj1.revisaHorizontal(sodokuarray, l,numerosodoku );
 						System.out.println(horizontal);
-						vertical  = obj1.revisaVertical(sodokuarray, k, numerosodoku);
+						MainSodoku obj2 = new MainSodoku();
+						vertical  = obj2.revisaVertical(sodokuarray, k, numerosodoku);
 						System.out.println(vertical);
-						cuadrado = obj1.revisaCuadrado(sodokuarray, k, l, numerosodoku);
+						MainSodoku obj3 = new MainSodoku();
+						cuadrado = obj3.revisaCuadrado(sodokuarray, l, k, numerosodoku);
 						System.out.println(cuadrado);
 					}while(!(vertical && horizontal && cuadrado));	
 				}
 			
 				System.out.println(k);
-				sodokuarray[l][k] = numerosodoku;
+				sodokuarray[k][l] = numerosodoku;
 				
 				for(int m =0;m<9; m++) {
 					for(int n=0; n<9; n++) {
-						System.out.print(sodokuarray[n][m]);
+						System.out.print(sodokuarray[m][n ]);
 						System.out.print(" ");
 					}
 					System.out.println("");

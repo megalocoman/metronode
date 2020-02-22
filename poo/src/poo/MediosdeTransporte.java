@@ -19,7 +19,6 @@ public class MediosdeTransporte {
 		this.capacidadPasajero = capacidadPasajero;
 		this.autonomia = autonomia;
 	}
-	
 	public void avanzar() {
 		System.out.println("Estoy avanzado...");
 	}

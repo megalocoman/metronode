@@ -10,18 +10,9 @@ public float caca;
 		m2.setKilometrosporLitro(200);
 		System.out.println(m2.getKilometrosporLitro());
 		
-		Elefante dumbo = new Elefante(10, 10, 10, 10, 10);
+		Elefantegordo dumbo = new Elefantegordo(10, 10, 10, 10, 10);
 		System.out.print(dumbo.getVelocidadMaxima());
 		
-	
-		
-		
-		
-		
-		
-		
-		
-
 	}
 
 }

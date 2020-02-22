@@ -1,6 +1,6 @@
 package poo;
 
-public class Elefante extends MediosdeTransporte {
+public class Elefantegordo extends MediosdeTransporte {
 			
 		public float poo;
 
@@ -12,7 +12,7 @@ public class Elefante extends MediosdeTransporte {
 			this.poo = poo;
 		}
 
-		public Elefante(float velocidadMaxima, float kilometrosporLitro, int capacidadPasajero, float autonomia,
+		public Elefantegordo(float velocidadMaxima, float kilometrosporLitro, int capacidadPasajero, float autonomia,
 				float poo) {
 			super(velocidadMaxima, kilometrosporLitro, capacidadPasajero, autonomia);
 			this.poo = poo;

@@ -2,16 +2,18 @@ package battlegame;
 // crea barcos, sus atributos y metodos
  class Barcos {
 	// tamaño
-	public int largobarco;
+	public static int largobarco;
+	public static char tipo; // w for water or s for ship
 	
-	public Barcos(int largo) {
+	public Barcos(int largo, char tipo ) {
 		this.largobarco = largo;
+		this.tipo =tipo;
 	} 
 	// setter
 	public void setLargo(int nuevolargo) {
 		this.largobarco = nuevolargo;
 	}
-	public int getLargo() {
+	public static int getLargo() {
 		return largobarco;
 	}	
 }
@@ -19,8 +21,8 @@ package battlegame;
  class ParteBarco extends Barcos{
 	 int horizontal;
 	 int vertical;
-	public ParteBarco(int largo, int i, int j ) {
-		super(largo);	
+	public ParteBarco( int i, int j ) {
+		super(getLargo());	
 		this.horizontal= i;
 		this.vertical = j;
 	}
@@ -38,6 +40,7 @@ package battlegame;
 	public int getVertical() {
 		return vertical;
 	}
+	// method which count how many sahipo part left
 		
 	public void setLargopropio(int nuevolargo) {
 		super.largobarco = nuevolargo;
